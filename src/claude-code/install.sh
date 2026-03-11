@@ -26,3 +26,7 @@ fi
 if [ -n "${CLAUDE_BIN}" ] && [ -x "${CLAUDE_BIN}" ]; then
     install -m 0755 "${CLAUDE_BIN}" /usr/local/bin/claude
 fi
+
+mkdir -p /opt/claude-credentials/dot-claude
+touch /opt/claude-credentials/dot-claude.json
+chmod -R 777 /opt/claude-credentials
