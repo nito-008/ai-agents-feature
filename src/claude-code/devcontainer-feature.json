@@ -3,6 +3,13 @@
     "id": "claude-code",
     "version": "1.0.0",
     "description": "Install Claude Code CLI",
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.claude",
+            "target": "${containerEnv:HOME}/.claude",
+            "type": "bind"
+        }
+    ],
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]

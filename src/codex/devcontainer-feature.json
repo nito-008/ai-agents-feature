@@ -3,6 +3,13 @@
     "id": "codex",
     "version": "1.0.0",
     "description": "Install OpenAI Codex CLI via npm.",
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.codex",
+            "target": "${containerEnv:HOME}/.codex",
+            "type": "bind"
+        }
+    ],
     "options": {
         "codex_version": {
             "type": "string",
