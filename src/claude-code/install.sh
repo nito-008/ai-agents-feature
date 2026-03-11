@@ -28,5 +28,5 @@ if [ -n "${CLAUDE_BIN}" ] && [ -x "${CLAUDE_BIN}" ]; then
 fi
 
 mkdir -p /opt/claude-credentials/dot-claude
-touch /opt/claude-credentials/dot-claude.json
+echo '{}' > /opt/claude-credentials/dot-claude.json
 chmod -R 777 /opt/claude-credentials
