@@ -1,0 +1,21 @@
+{
+    "name": "OpenAI Codex",
+    "id": "codex",
+    "version": "1.0.0",
+    "description": "Install OpenAI Codex CLI via npm.",
+    "options": {
+        "codex_version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of @openai/codex to install with npm."
+        },
+        "node_version": {
+            "type": "string",
+            "default": "20",
+            "description": "Major Node.js version to install if node/npm are missing."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
