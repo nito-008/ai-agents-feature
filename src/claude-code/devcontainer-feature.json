@@ -1,15 +1,17 @@
 {
     "name": "Claude Code",
     "id": "claude-code",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Install Claude Code CLI",
     "mounts": [
         {
-            "source": "${localEnv:HOME}/.claude",
-            "target": "${containerEnv:HOME}/.claude",
-            "type": "bind"
+            "source": "claude-credentials",
+            "target": "/opt/claude-credentials",
+            "type": "volume"
         }
     ],
+    "postCreateCommand": "mkdir -p /opt/claude-credentials/dot-claude && touch /opt/claude-credentials/dot-claude.json",
+    "postStartCommand": "ln -sfn /opt/claude-credentials/dot-claude ${HOME}/.claude && ln -sf /opt/claude-credentials/dot-claude.json ${HOME}/.claude.json",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
