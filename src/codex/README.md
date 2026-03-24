@@ -7,7 +7,7 @@ Install OpenAI Codex CLI via npm.
 
 ```json
 "features": {
-    "ghcr.io/nito-008/ai-agents-feature/codex:1": {}
+    "ghcr.io/nito-008/ai-agents-feature/codex:2": {}
 }
 ```
 
@@ -16,10 +16,6 @@ Install OpenAI Codex CLI via npm.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | codex_version | Version of @openai/codex to install with npm. | string | latest |
-
-## Dependencies
-
-This feature requires Node.js/npm. It is configured to install after `ghcr.io/devcontainers/features/node`, so make sure to include the Node feature in your devcontainer configuration.
 
 
 
