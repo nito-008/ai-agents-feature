@@ -1,5 +1,5 @@
 {
-    "codex-with-node": {
+    "test": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "ghcr.io/devcontainers/features/node:1": {},
