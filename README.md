@@ -11,7 +11,7 @@
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/nito-008/ai-agents-feature/claude-code:latest": {}
+        "ghcr.io/nito-008/ai-agents-feature/claude-code:1": {}
     }
 }
 ```
@@ -22,9 +22,9 @@
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/nito-008/ai-agents-feature/codex:latest": {
-            "codex_version": "latest",
-            "node_version": "20"
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/nito-008/ai-agents-feature/codex:2": {
+            "codex_version": "latest"
         }
     }
 }
